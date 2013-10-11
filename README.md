@@ -16,8 +16,8 @@ you can define string, image or html parameters.
 
 ## Usage
 
-1. Copy the `custom_page_parts` folder in your `vendor/engines` folder
-2. Create a file named `custom_page_parts_config.rb` in your `config`
+1. Download this project to a `custom_page_parts` folder in your `vendor/extensions` folder
+2. Create a file named `custom_page_parts_config.rb` in your `config/initializers/refinery`
    folder
 3. Define what parameters your custom page parts will have. For example,
    our `project` page part definition looks like this:
