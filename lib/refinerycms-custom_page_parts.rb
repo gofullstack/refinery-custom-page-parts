@@ -15,7 +15,7 @@ module Refinery
         
         # Inject new methods
         PagePart.class_eval do
-          
+
           def normalise_text_fields
             if !Refinery::CustomPageParts.is_custom?(self) && body.present? && body !~ %r{^<}
               self.body = "<p>#{body.gsub("\r\n\r\n", "</p><p>").gsub("\r\n", "<br/>")}</p>"
