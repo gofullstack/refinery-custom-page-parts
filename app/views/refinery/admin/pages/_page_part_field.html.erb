@@ -48,4 +48,10 @@
       $(".edit_page .field").height("");
     }, 200);
   }
+  <% if part.is_custom? && part.get_field("title") %>
+    $(document).ready(function() {
+      var link = $("#page_parts li[data-index='<%= part.position %>']>a");
+      link.html("<%= part.get_field :title %>");
+    });
+  <%end %>
 </script>
